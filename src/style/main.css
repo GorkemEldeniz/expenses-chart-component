@@ -1,0 +1,31 @@
+@import url("./var.css");
+
+body,
+html {
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+}
+
+#root {
+  width: 100%;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  text-align: center;
+}
