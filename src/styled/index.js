@@ -59,16 +59,20 @@ const Column = styled.div`
 
 const PopUp = styled.div`
 	${(props) => css`
-	position:absolute;
-	border-radius:.5rem;
-	z-index:99;
-	background-color:var(--dark-brown);
-	padding:0.4rem;
-	color:var(--cream);
-	top:-2.4rem;
-	left:-0.2rem;
-	transform:translateY(-50%):
-`}
+		position: absolute;
+		border-radius: 0.5rem;
+		z-index: 99;
+		background-color: var(--dark-brown);
+		padding: 0.4rem;
+		color: var(--cream);
+		top: -2.4rem;
+		left: calc(50% - 1.8rem);
+	`}
+	@media (max-width:400px) {
+		font-size: 0.75rem;
+		top: -2rem;
+		left: calc(50% - 1.6rem);
+	}
 `;
 
 const Footer = styled.footer`

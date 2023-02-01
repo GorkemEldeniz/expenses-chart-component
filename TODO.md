@@ -1,1 +1,1 @@
-[ ] fix mobile issues
+[x] fix mobile issue
