@@ -9,7 +9,7 @@ function Header() {
         <span>My balance</span>
         <h1>$921.48</h1>
       </div>
-      <img src={logo} alt="Logo" />
+      <S.Img src={logo} alt="Logo" />
     </S.Header>
   )
 }

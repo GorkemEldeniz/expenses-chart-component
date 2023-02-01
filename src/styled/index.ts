@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import "../style/var.css";
 
 const Main = styled.main`
-	width: 40%;
+	width: 30%;
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
@@ -16,6 +16,7 @@ const Header = styled.header`
 	background-color: var(--soft-red);
 	color: var(--cream);
 	display: flex;
+	align-items:center;
 	padding: 1rem;
 	justify-content: space-between;
 	border-radius: 1rem;
@@ -63,6 +64,10 @@ const Column = styled.div`
 	}
 `;
 
+const Img = styled.img`
+	height:2rem;
+	object-fit:cover;
+`
 
 
 const PopUp = styled.div`
@@ -101,4 +106,4 @@ const H1 = styled.h1`
 	color: var(--dark-brown);
 `;
 
-export { Header, Main, Body, Footer, Span, H1, Divider, Graph, Column, PopUp };
+export { Header, Main, Body, Footer, Span, H1, Divider, Graph, Column, PopUp ,Img};
