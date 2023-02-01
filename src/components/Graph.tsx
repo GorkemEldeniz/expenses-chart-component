@@ -10,7 +10,7 @@ function Graph() {
     <S.Graph>
       {data.map(({ day, amount }, index) => <div className='col' key={index}>
         <S.Column onMouseOver={() => setHovered(index)} active={index == 3} amount={amount * 1.5}>
-          {hovered == index && <S.PopUp amount={amount}>${amount}</S.PopUp>}
+          {hovered == index && <S.PopUp>${amount}</S.PopUp>}
         </S.Column>
         <S.Span onMouseOver={() => setHovered(index)} >{day}</S.Span>
       </div>)}

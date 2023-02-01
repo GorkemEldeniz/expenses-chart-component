@@ -47,8 +47,14 @@ const Graph = styled.div`
 	height: 200px;
 `;
 
+type Data = {
+	active : boolean;
+	amount : number;
+}
+
+
 const Column = styled.div`
-	${(props) => css`
+	${(props :Data) => css`
 		height: ${props.amount}%;
 		background-color: ${props.active ? "var(--cyan)" : "var(--soft-red)"};
 	`}
@@ -57,8 +63,9 @@ const Column = styled.div`
 	}
 `;
 
+
+
 const PopUp = styled.div`
-	${(props) => css`
 		position: absolute;
 		border-radius: 0.5rem;
 		z-index: 99;
@@ -67,7 +74,6 @@ const PopUp = styled.div`
 		color: var(--cream);
 		top: -2.4rem;
 		left: calc(50% - 1.8rem);
-	`}
 	@media (max-width:400px) {
 		font-size: 0.75rem;
 		top: -2rem;
